@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicitacoes__c</fullName>
+    <description>é possivel a seleção de multiplos produtos ou serviços.</description>
+    <inlineHelpText>é possivel a seleção de multiplos produtos ou serviços.</inlineHelpText>
+    <label>Solicitacoes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compra de produtos</fullName>
+                <default>false</default>
+                <label>Compra de produtos</label>
+            </value>
+            <value>
+                <fullName>Venda de produtos</fullName>
+                <default>false</default>
+                <label>Venda de produtos</label>
+            </value>
+            <value>
+                <fullName>compra de serviços</fullName>
+                <default>false</default>
+                <label>compra de serviços</label>
+            </value>
+            <value>
+                <fullName>venda de serviços</fullName>
+                <default>false</default>
+                <label>venda de serviços</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

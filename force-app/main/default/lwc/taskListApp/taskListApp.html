@@ -1,0 +1,8 @@
+<!--Componente Pai (TaskListApp)-->
+<template>
+        <div class="slds-m-around_medium">
+            <template for:each={tasks} for:item="task">
+                <c-task-item key={task.id} initial-task={task} ontaskupdate={handleTaskUpdate}></c-task-item>
+            </template>
+        </div>
+</template>

@@ -1,0 +1,21 @@
+.imagem {
+    
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 14%;
+    width: 95%
+    right;
+    
+}
+
+.borda{
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #706e6b;
+    padding-top: 5px;
+    border-bottom: 1px solid #706e6b;
+    padding-bottom: 5px;
+}

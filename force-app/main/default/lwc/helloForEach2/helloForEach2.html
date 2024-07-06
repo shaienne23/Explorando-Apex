@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Hello For Each 2" icon-name="custom:custom16">
+        <ul class="slds-m-around_medium">
+            <template for:each={wiredLeads.data} for:item="lead">
+                <li key={lead.Id}>{lead.Name}, {lead.Title}</li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

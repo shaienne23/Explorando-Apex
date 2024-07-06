@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foco_de_Armazenamento__c</fullName>
+    <description>Foco de armazenamento.</description>
+    <inlineHelpText>Selecione o foco de armazenamento.</inlineHelpText>
+    <label>Foco de Armazenamento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Modelo_de_Armazenamento__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pimbos Aeros</fullName>
+                <default>false</default>
+                <label>Pimbos Aeros</label>
+            </value>
+            <value>
+                <fullName>Voando Baixo</fullName>
+                <default>false</default>
+                <label>Voando Baixo</label>
+            </value>
+            <value>
+                <fullName>Descendus e Cias</fullName>
+                <default>false</default>
+                <label>Descendus e Cias</label>
+            </value>
+            <value>
+                <fullName>Entregas a Jato</fullName>
+                <default>false</default>
+                <label>Entregas a Jato</label>
+            </value>
+            <value>
+                <fullName>Buso</fullName>
+                <default>false</default>
+                <label>Buso</label>
+            </value>
+            <value>
+                <fullName>Caminhoners</fullName>
+                <default>false</default>
+                <label>Caminhoners</label>
+            </value>
+            <value>
+                <fullName>Uber</fullName>
+                <default>false</default>
+                <label>Uber</label>
+            </value>
+            <value>
+                <fullName>MotoLindos</fullName>
+                <default>false</default>
+                <label>MotoLindos</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Modelo Aéreo</controllingFieldValue>
+            <valueName>Pimbos Aeros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Aéreo</controllingFieldValue>
+            <valueName>Voando Baixo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Aéreo</controllingFieldValue>
+            <valueName>Descendus e Cias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Aéreo</controllingFieldValue>
+            <valueName>Entregas a Jato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Vias e Rodovias</controllingFieldValue>
+            <valueName>Buso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Vias e Rodovias</controllingFieldValue>
+            <valueName>Caminhoners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Vias e Rodovias</controllingFieldValue>
+            <valueName>Uber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modelo Vias e Rodovias</controllingFieldValue>
+            <valueName>MotoLindos</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

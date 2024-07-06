@@ -1,0 +1,31 @@
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+    access="global">
+    <!--<aura:attribute name="helloWorld" type ="String" default ="Hello World" Description="Esse e um texto" />
+    <aura:attribute name="Number" type ="Integer" default ="0" Description="Esse e um numero" />
+    <aura:attribute name="n1" type ="String" default ="Hello There" Description="Esse e um texto" />
+    <ui:inputText label="enter some text" class="field" Value="{!v.n1}"/>
+    
+    valor numero 1: <ui:outputText value="{!v.n1}"/>-->
+    <aura:attribute name="visivel" type="Boolean" default="True" Description="Esse e um boleano verdadeiro" />
+
+    <lightning:card title="Caça ao tesouro.">
+        <div class="slds-box slds-theme_default">
+            <!--<h1>Ola Mundo, Saudações {!v.helloWorld}</h1>
+        <p>Meu numero é: {!v.Number}</p>
+        <p>Meu Booleano é: {!v.visivel}</p>-->
+            <p>Ache o tesouro, veja o mapa e tente encontrar o tesouro em 30 segundos.</p>
+            <br />
+            <lightning:button variant="brand" label="Clique se não achou o tesouro" title="Botao de acao"
+                onclick="{! c.handleClick }" />
+        </div>
+        <aura:if isTrue="{!v.visivel}">
+            <img src="{!$Resource.tesouro}"></img>
+        </aura:if>
+
+        <aura:if isTrue="{!not(v.visivel)}">
+            <img src="{!$Resource.gatochorao}" />
+        </aura:if>
+        <p></p>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tarefas__c</fullName>
+    <description>selecione suas tarefas</description>
+    <inlineHelpText>selecione suas tarefas</inlineHelpText>
+    <label>Tarefas</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tarefa 01</fullName>
+                <default>false</default>
+                <label>Tarefa 01</label>
+            </value>
+            <value>
+                <fullName>tarefa 02</fullName>
+                <default>false</default>
+                <label>tarefa 02</label>
+            </value>
+            <value>
+                <fullName>tarefa 03</fullName>
+                <default>false</default>
+                <label>tarefa 03</label>
+            </value>
+            <value>
+                <fullName>tarefa 04</fullName>
+                <default>false</default>
+                <label>tarefa 04</label>
+            </value>
+            <value>
+                <fullName>tarefa 05</fullName>
+                <default>false</default>
+                <label>tarefa 05</label>
+            </value>
+            <value>
+                <fullName>tarefa 06</fullName>
+                <default>false</default>
+                <label>tarefa 06</label>
+            </value>
+            <value>
+                <fullName>tarefa 07</fullName>
+                <default>false</default>
+                <label>tarefa 07</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

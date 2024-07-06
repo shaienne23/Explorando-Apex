@@ -1,0 +1,23 @@
+<template>
+    <lightning-card class="card" title="Leads" icon-name="custom:custom20">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <template for:each={Lead} for:item="leads">
+                    <div class="Informacoes" key={leads.numero}>
+                        <ul>
+                            <strong>
+                                <li>lead {leads.numero}</li>
+                            </strong>
+                            <li>Id: {leads.Id}</li>
+                            <li>Nome: {leads.Nome}</li>
+                            <li>Valor: {leads.Sobrenome}</li>
+                            <li>Empresa: {leads.Empresa}</li>
+                            <li>Status: {leads.Status}</li>
+                            <li>Estagio do Lead: {leads.Estagio}</li>
+                        </ul>
+                    </div>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

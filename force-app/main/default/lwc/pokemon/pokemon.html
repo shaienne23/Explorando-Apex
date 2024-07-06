@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Lista Js Customizado" icon-name="custom:custom17">
+        <div class="borda">
+            <template if:true={mostrarPokemon1}>
+                <img class="imagem" src={pokemon1} alt="Quem é esse pokemon" />
+            </template>
+            <template if:true={mostrarPokemon2}>
+                <img class="imagem" src={pokemon2} alt="é o pokemon" />
+            </template>
+
+            <strong><lightning-button class="slds-m-around_medium" variant="neutral" label="Vizualize a pokemon"
+                    onclick={ocultarImagem}></lightning-button></strong>
+        </div>
+    </lightning-card>
+</template>

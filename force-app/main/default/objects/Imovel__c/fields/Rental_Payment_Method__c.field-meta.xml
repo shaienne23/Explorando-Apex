@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_Payment_Method__c</fullName>
+    <description>Selecione o metodo de locação.</description>
+    <inlineHelpText>Selecione o metodo de locação.</inlineHelpText>
+    <label>Forma de Pagamento Aluguel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Com Fiador</fullName>
+                <default>false</default>
+                <label>Com Fiador</label>
+            </value>
+            <value>
+                <fullName>Com Depósito Caução</fullName>
+                <default>false</default>
+                <label>Com Depósito Caução</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Vendedor Bronze</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Vendedor Bronze</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Gerente_de_Vendas_Mitsumasa</parentRole>
+</Role>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Hello Conditional Rendering" icon-name="custom:custom15">
+
+        <lightning-record-edit-form object-api-name="Lead" record-id={recordId}>
+
+            <div class="botao">
+                <div class="checkbox-wrapper">
+                    <lightning-input type="checkbox" class="custom-checkbox" label="Mostrar detalhes"
+                        onchange={handleChange}></lightning-input>
+                </div>
+                <div class="detalhes">
+                    <template if:true={areDetailsVisible}>
+                        Checkbox selecionado. Aqui estão os detalhes:<br />
+                        <p class="det">"OS DETALHES."</p>
+                    </template>
+
+                    <template if:false={areDetailsVisible}>
+                        Selecione o Checkbox, para visualização dos detalhes!!
+                    </template>
+                </div>
+            </div>
+
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

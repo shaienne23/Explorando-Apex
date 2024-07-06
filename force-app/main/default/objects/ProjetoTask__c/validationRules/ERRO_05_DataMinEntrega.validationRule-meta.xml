@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERRO_05_DataMinEntrega</fullName>
+    <active>true</active>
+    <description>A data de entrega  deverá ser no mínimo de 45 dias após a data de início do projeto.</description>
+    <errorConditionFormula>Data_Entrega__c &lt; Data_Inicio__c + 45</errorConditionFormula>
+    <errorMessage>ERRO_05_A data de entrega  deverá ser no mínimo de 45 dias após a data de início do projeto.</errorMessage>
+</ValidationRule>

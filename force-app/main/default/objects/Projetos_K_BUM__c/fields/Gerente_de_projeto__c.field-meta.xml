@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gerente_de_projeto__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Relacionamento de pesquisa</description>
+    <inlineHelpText>Relacionamento de pesquisa com usuario.</inlineHelpText>
+    <label>Gerente de projeto</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Projetos_K_BUM</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

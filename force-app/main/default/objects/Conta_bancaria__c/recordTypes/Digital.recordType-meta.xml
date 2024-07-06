@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital</fullName>
+    <active>true</active>
+    <label>Digital</label>
+    <picklistValues>
+        <picklist>Banco__c</picklist>
+        <values>
+            <fullName>C6 Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nubank</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Forma_de_Contato__c</picklist>
+        <values>
+            <fullName>Chat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefone do gerente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

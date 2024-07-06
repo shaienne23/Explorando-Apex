@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Lista tres contatos" icon-name="custom:custom17">
+        <ul class="slds-m-around_medium">
+            <template for:each={wiredContacts.data} for:item="contact">
+                <li key={contact.Id}>{contact.Name}, {contact.Title}</li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

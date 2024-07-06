@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sale_Status__c</fullName>
+    <label>Status da Venda</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Em andamento</fullName>
+                <default>false</default>
+                <label>Em andamento</label>
+            </value>
+            <value>
+                <fullName>Concluída</fullName>
+                <default>false</default>
+                <label>Concluída</label>
+            </value>
+            <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+            <value>
+                <fullName>Aguardando Pagamento</fullName>
+                <default>false</default>
+                <label>Aguardando Pagamento</label>
+            </value>
+            <value>
+                <fullName>Reservada</fullName>
+                <default>false</default>
+                <label>Reservada</label>
+            </value>
+            <value>
+                <fullName>Entrega Pendente</fullName>
+                <default>false</default>
+                <label>Entrega Pendente</label>
+            </value>
+            <value>
+                <fullName>Aguardando Documentação</fullName>
+                <default>false</default>
+                <label>Aguardando Documentação</label>
+            </value>
+            <value>
+                <fullName>Em Negociação</fullName>
+                <default>false</default>
+                <label>Em Negociação</label>
+            </value>
+            <value>
+                <fullName>Oferta em Análise</fullName>
+                <default>false</default>
+                <label>Oferta em Análise</label>
+            </value>
+            <value>
+                <fullName>Em Inspeção</fullName>
+                <default>false</default>
+                <label>Em Inspeção</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

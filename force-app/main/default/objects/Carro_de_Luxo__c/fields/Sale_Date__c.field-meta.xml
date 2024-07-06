@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sale_Date__c</fullName>
+    <description>Para registrar a data em que o carro foi vendido.</description>
+    <inlineHelpText>Adicione a data de venda do veiculo.</inlineHelpText>
+    <label>Data de Venda</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

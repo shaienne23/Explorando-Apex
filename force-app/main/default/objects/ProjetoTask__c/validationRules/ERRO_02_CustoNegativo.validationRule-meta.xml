@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERRO_02_CustoNegativo</fullName>
+    <active>true</active>
+    <description>O custo nao deve ser negativo.</description>
+    <errorConditionFormula>Custo__c  &lt; 0</errorConditionFormula>
+    <errorMessage>ERRO_02_O campo Custo não deve ser Negativo.</errorMessage>
+</ValidationRule>

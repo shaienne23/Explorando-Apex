@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Car_Type__c</fullName>
+    <description>Selecione o tipo de carro.</description>
+    <inlineHelpText>Selecione o tipo de carro.</inlineHelpText>
+    <label>Tipo de Carro</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sedan de Luxo</fullName>
+                <default>false</default>
+                <label>Sedan de Luxo</label>
+            </value>
+            <value>
+                <fullName>SUV de Luxo</fullName>
+                <default>false</default>
+                <label>SUV de Luxo</label>
+            </value>
+            <value>
+                <fullName>Coupé de Luxo</fullName>
+                <default>false</default>
+                <label>Coupé de Luxo</label>
+            </value>
+            <value>
+                <fullName>Conversível de Luxo</fullName>
+                <default>false</default>
+                <label>Conversível de Luxo</label>
+            </value>
+            <value>
+                <fullName>Carro Esportivo de Luxo</fullName>
+                <default>false</default>
+                <label>Carro Esportivo de Luxo</label>
+            </value>
+            <value>
+                <fullName>Hatchback de Luxo</fullName>
+                <default>false</default>
+                <label>Hatchback de Luxo</label>
+            </value>
+            <value>
+                <fullName>Carro de Luxo de Alta Performance</fullName>
+                <default>false</default>
+                <label>Carro de Luxo de Alta Performance</label>
+            </value>
+            <value>
+                <fullName>Carro Elétrico de Luxo</fullName>
+                <default>false</default>
+                <label>Carro Elétrico de Luxo</label>
+            </value>
+            <value>
+                <fullName>Limusine de Luxo</fullName>
+                <default>false</default>
+                <label>Limusine de Luxo</label>
+            </value>
+            <value>
+                <fullName>Carro de Luxo Clássico</fullName>
+                <default>false</default>
+                <label>Carro de Luxo Clássico</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

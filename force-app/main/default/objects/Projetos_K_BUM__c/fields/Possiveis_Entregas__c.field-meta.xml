@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Possiveis_Entregas__c</fullName>
+    <inlineHelpText>Selecione a opção.</inlineHelpText>
+    <label>Possiveis Entregas</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Código fonte</fullName>
+                <default>false</default>
+                <label>Código fonte</label>
+            </value>
+            <value>
+                <fullName>Documentação</fullName>
+                <default>false</default>
+                <label>Documentação</label>
+            </value>
+            <value>
+                <fullName>Documentação de Ajuda</fullName>
+                <default>false</default>
+                <label>Documentação de Ajuda</label>
+            </value>
+            <value>
+                <fullName>Site</fullName>
+                <default>false</default>
+                <label>Site</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

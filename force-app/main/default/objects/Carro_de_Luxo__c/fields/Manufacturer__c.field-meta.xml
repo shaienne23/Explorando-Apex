@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufacturer__c</fullName>
+    <description>Identificação do fabricante do veiculo.</description>
+    <inlineHelpText>Selecione o fabricante do veiculo.</inlineHelpText>
+    <label>Fabricante</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mercedes-Benz</fullName>
+                <default>false</default>
+                <label>Mercedes-Benz</label>
+            </value>
+            <value>
+                <fullName>BMW</fullName>
+                <default>false</default>
+                <label>BMW</label>
+            </value>
+            <value>
+                <fullName>Audi</fullName>
+                <default>false</default>
+                <label>Audi</label>
+            </value>
+            <value>
+                <fullName>Porsche</fullName>
+                <default>false</default>
+                <label>Porsche</label>
+            </value>
+            <value>
+                <fullName>Bentley</fullName>
+                <default>false</default>
+                <label>Bentley</label>
+            </value>
+            <value>
+                <fullName>Rolls-Royce</fullName>
+                <default>false</default>
+                <label>Rolls-Royce</label>
+            </value>
+            <value>
+                <fullName>Lamborghini</fullName>
+                <default>false</default>
+                <label>Lamborghini</label>
+            </value>
+            <value>
+                <fullName>Ferrari</fullName>
+                <default>false</default>
+                <label>Ferrari</label>
+            </value>
+            <value>
+                <fullName>Aston Martin</fullName>
+                <default>false</default>
+                <label>Aston Martin</label>
+            </value>
+            <value>
+                <fullName>Maserati</fullName>
+                <default>false</default>
+                <label>Maserati</label>
+            </value>
+            <value>
+                <fullName>Bugatti</fullName>
+                <default>false</default>
+                <label>Bugatti</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

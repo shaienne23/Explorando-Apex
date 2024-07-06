@@ -1,0 +1,56 @@
+<apex:page controller="AccountController" >
+ 	<style>
+  		#Cadastrar{
+        	background-color: red;
+       		border:solid;
+        	margin-top:20%;
+            margin-left:20%;
+            margin-right:20%;
+        	margin-bottom:20%;
+        }
+        #form{
+        	border:solid;
+        	color: blue;
+        	widht:300px;
+        }
+        body {
+          background-image: linear-gradient(blue, white);
+            border:solid;
+            color: blue;
+            widht:300px;
+          
+        }
+    </style>
+    <!-- Incluir slds - componentes -->
+    <apex:slds />
+    
+<div id="Cadastrar">
+    <div id="form">
+        <apex:pageMessages ></apex:pageMessages>
+        <apex:pageBlock title="Cadastrar Conta">
+            <apex:form >
+                <apex:panelGrid columns="2">
+                    <apex:outputLabel value="Nome" for="inputNome"/>
+                    <apex:inputText value="{!Nome}" id="inputNome"/>
+
+                    <apex:outputLabel value="Phone" for="inputPhone"/>
+                    <apex:inputText value="{!Phone}" id="inputPhone"/>
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="inputNome">
+                            <abbr class="slds-required" title="required">*</abbr>Nome
+                        </label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="text-input-id-46" placeholder="Escreva seu nome" required="" class="slds-input" />
+                        </div>
+                    </div>
+                    {!$USER.FIRSTNAME}
+                    {!YEAR(TODAY())}
+                    </apex:panelGrid>
+                    <apex:commandButton value="Salvar" action="{!salvarAccount}"/>
+                </apex:form>
+    		</apex:pageBlock>
+       </div>
+    
+    </div>
+</apex:page>

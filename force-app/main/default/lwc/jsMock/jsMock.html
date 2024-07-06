@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Lista Js Customizado" icon-name="custom:custom17">
+        <div class="slds-m-around_medium">
+            <template if:true={mostrarDetalhes}>
+                <div>
+                    Empresa: {empresa}
+                </div>
+                <div>CNPJ: {cnpj}</div>
+                <div>Endereço: {endereco}</div>
+                <br />
+                <div>Produto: {produto}</div>
+                <div>Descrição: {descricao}</div>
+                <div>Preço: R$ {preco}</div>
+            </template>
+            <template if:true={mostrarPromocao}>
+                <div>Promoção</div>
+                <div>Oferta 1: {oferta1}</div>
+                <div>Oferta 2: {oferta2}</div>
+            </template>
+        </div>
+        <strong><lightning-button class="slds-m-around_medium" variant="neutral" label="Vizualize a promoção"
+                onclick={ocultarDescricaoPreco}></lightning-button></strong>
+    </lightning-card>
+</template>

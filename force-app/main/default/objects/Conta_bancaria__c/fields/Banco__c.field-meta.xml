@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banco__c</fullName>
+    <description>Selecione o banco.</description>
+    <inlineHelpText>Selecione o banco.</inlineHelpText>
+    <label>Banco</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Banco do Brasil</fullName>
+                <default>false</default>
+                <label>Banco do Brasil</label>
+            </value>
+            <value>
+                <fullName>C6 Bank</fullName>
+                <default>false</default>
+                <label>C6 Bank</label>
+            </value>
+            <value>
+                <fullName>Digio</fullName>
+                <default>false</default>
+                <label>Digio</label>
+            </value>
+            <value>
+                <fullName>Inter</fullName>
+                <default>false</default>
+                <label>Inter</label>
+            </value>
+            <value>
+                <fullName>Itau</fullName>
+                <default>false</default>
+                <label>Itau</label>
+            </value>
+            <value>
+                <fullName>Nubank</fullName>
+                <default>false</default>
+                <label>Nubank</label>
+            </value>
+            <value>
+                <fullName>Sicoob</fullName>
+                <default>false</default>
+                <label>Sicoob</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

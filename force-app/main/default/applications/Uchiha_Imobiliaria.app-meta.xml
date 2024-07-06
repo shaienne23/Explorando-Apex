@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Venda</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Imovel__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>Capturar</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Uchiha Imobiliária: Transformando Sonhos em Realidade, um Imóvel de Cada Vez.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Uchiha Imobiliaria</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Aluguel</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Imovel__c</pageOrSobjectType>
+        <recordType>Imovel__c.Aluguel</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Venda</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Imovel__c</pageOrSobjectType>
+        <recordType>Imovel__c.Venda</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>Cliente_Imovel__c</tabs>
+    <tabs>Proprietario__c</tabs>
+    <tabs>Imovel__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>ProjetoTask__c</tabs>
+    <tabs>Projetos_K_BUM__c</tabs>
+    <tabs>Tipo_de_Produto__c</tabs>
+    <tabs>Proposta_do_centro__c</tabs>
+    <tabs>Empresa_contratante__c</tabs>
+    <tabs>Carro_de_Luxo__c</tabs>
+    <tabs>Despesa__c</tabs>
+    <tabs>teste1__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Uchiha_Imobiliaria_UtilityBar</utilityBar>
+</CustomApplication>

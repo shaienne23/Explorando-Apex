@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERRO_04_DataEntregaMenorQueDataInicio</fullName>
+    <active>true</active>
+    <description>A data de entrega deve ser maior que a data de inicio.</description>
+    <errorConditionFormula>Data_Entrega__c  &lt;  Data_Inicio__c</errorConditionFormula>
+    <errorMessage>ERRO_04_A data de entrega não pode ser menor que a data de inicio.</errorMessage>
+</ValidationRule>

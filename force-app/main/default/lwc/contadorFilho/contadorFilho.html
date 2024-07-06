@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Contador Filho" icon-name="custom:custom21">
+        <div class="borda">
+            <div class="Texto">Contador: {contador}</div>
+            <strong><lightning-button class="slds-m-around_medium" variant="neutral" label="Aumente o numero"
+                    onclick={handleIncrement}></lightning-button></strong>
+            <strong><lightning-button class="slds-m-around_medium" variant="neutral" label="Diminua o numero"
+                    onclick={handleDecrement}></lightning-button></strong>
+        </div>
+    </lightning-card>
+</template>

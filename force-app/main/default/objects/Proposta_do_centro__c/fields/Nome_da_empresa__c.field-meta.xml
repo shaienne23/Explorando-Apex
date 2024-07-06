@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nome_da_empresa__c</fullName>
+    <description>Nome da empresa responsavel pelo envio da proposta.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informe Nome da empresa responsavel pelo envio da proposta.</inlineHelpText>
+    <label>Nome da empresa</label>
+    <length>255</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

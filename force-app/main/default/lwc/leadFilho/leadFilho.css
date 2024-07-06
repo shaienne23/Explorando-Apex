@@ -1,0 +1,19 @@
+:host {
+	--sds-c-card-color-background: linear-gradient(180deg, rgb(217, 235, 242) 80%, #bdb6da 100%);
+}
+
+.Informacoes{
+        padding: 0;
+        border-top: 2px solid #706e6b;
+        padding-top: 5px;
+        text-align: left;
+        font-size: 14px;
+}
+
+.card{
+        display: block;
+        border: 1px solid #c6d1e6;
+        border-radius: .25rem;
+
+        
+}

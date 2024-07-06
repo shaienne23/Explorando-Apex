@@ -1,0 +1,29 @@
+<template>
+    <lightning-card class="card" title="Pais e Filhos" icon-name="custom:custom20">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="slds-box slds-theme_default card">
+                    <h1 class="slds-text-heading_large">Dados Lead:</h1>
+                    <h1 class="slds-text-heading_large">
+                        Nome: {PrimeiroNome} {SegundoNome}
+                    </h1>
+                    <p class="slds-text-body_medium">
+                        Idade: {Idade}
+                    </p>
+                    <p class="slds-text-body_medium">
+                        Email: {Email}
+                    </p>
+                    <p class="slds-text-body_medium">
+                        Classificação: {Classificacao}
+                    </p>
+                    <p class="slds-text-body_medium">
+                        Empresa: {Empresa}
+                    </p>
+                    <p class="slds-text-body_medium">
+                        Receita Anual: {ValorAnual}
+                    </p>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fuel__c</fullName>
+    <description>Combustivel do veiculo.</description>
+    <inlineHelpText>Selecione um ou mais combustiveis pertinentes ao veiculo.</inlineHelpText>
+    <label>Combustivel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gasolina</fullName>
+                <default>false</default>
+                <label>Gasolina</label>
+            </value>
+            <value>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+                <label>Diesel</label>
+            </value>
+            <value>
+                <fullName>Etanol</fullName>
+                <default>false</default>
+                <label>Etanol</label>
+            </value>
+            <value>
+                <fullName>Biodiesel</fullName>
+                <default>false</default>
+                <label>Biodiesel</label>
+            </value>
+            <value>
+                <fullName>Gás Natural Veicular (GNV)</fullName>
+                <default>false</default>
+                <label>Gás Natural Veicular (GNV)</label>
+            </value>
+            <value>
+                <fullName>Eletricidade</fullName>
+                <default>false</default>
+                <label>Eletricidade</label>
+            </value>
+            <value>
+                <fullName>Hidrogênio</fullName>
+                <default>false</default>
+                <label>Hidrogênio</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card class="card" title="Oportunidades" icon-name="custom:custom20">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <template for:each={oportunidades} for:item="oportunidade">
+                    <div key={oportunidade.Id}>
+                        <p>Id: {oportunidade.Id}</p>
+                        <p>Nome: {oportunidade.Nome}</p>
+                        <p>Valor: {oportunidade.Valor}</p>
+                        <p>Fase: {oportunidade.Fase}</p>
+                        <p>shaienne</p>
+                    </div>
+                </template>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Espaco__c</fullName>
+    <description>Informe sobre o espaço.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informe sobre o espaço.</inlineHelpText>
+    <label>Espaco</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

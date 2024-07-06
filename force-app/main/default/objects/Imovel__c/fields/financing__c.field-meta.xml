@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>financing__c</fullName>
+    <description>Selecione o tipo de financiamento.</description>
+    <inlineHelpText>Selecione o tipo de financiamento.</inlineHelpText>
+    <label>financiamento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>À VISTA</fullName>
+                <default>false</default>
+                <label>À VISTA</label>
+            </value>
+            <value>
+                <fullName>CEF</fullName>
+                <default>false</default>
+                <label>CEF</label>
+            </value>
+            <value>
+                <fullName>BRADESCO</fullName>
+                <default>false</default>
+                <label>BRADESCO</label>
+            </value>
+            <value>
+                <fullName>BANCO DO BRASIL</fullName>
+                <default>false</default>
+                <label>BANCO DO BRASIL</label>
+            </value>
+            <value>
+                <fullName>ITAÚ</fullName>
+                <default>false</default>
+                <label>ITAÚ</label>
+            </value>
+            <value>
+                <fullName>SANTANDER</fullName>
+                <default>false</default>
+                <label>SANTANDER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

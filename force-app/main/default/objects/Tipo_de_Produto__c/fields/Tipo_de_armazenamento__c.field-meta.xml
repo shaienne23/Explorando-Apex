@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_armazenamento__c</fullName>
+    <description>Tipo de armazenamento do produto.</description>
+    <inlineHelpText>Selecione o tipo de armazenamento do produto.</inlineHelpText>
+    <label>Tipo de armazenamento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Armazenamento congelado</fullName>
+                <default>false</default>
+                <label>Armazenamento congelado</label>
+            </value>
+            <value>
+                <fullName>Armazenamento em ambiente controlado</fullName>
+                <default>false</default>
+                <label>Armazenamento em ambiente controlado</label>
+            </value>
+            <value>
+                <fullName>Armazenamento em temperatura ambiente</fullName>
+                <default>false</default>
+                <label>Armazenamento em temperatura ambiente</label>
+            </value>
+            <value>
+                <fullName>Armazenamento refrigerado</fullName>
+                <default>false</default>
+                <label>Armazenamento refrigerado</label>
+            </value>
+            <value>
+                <fullName>Armazenamento seco</fullName>
+                <default>false</default>
+                <label>Armazenamento seco</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

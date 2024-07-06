@@ -1,0 +1,10 @@
+<!-- TaskItem filho -->
+<template>
+    <lightning-card title="Lista de Tarefa - Componente Filho" icon-name="standard:task">
+        <div class="slds-m-around_medium">
+            <div>Tarefa: {initialTask.text}</div>
+            <lightning-input label="Nova Tarefa" value={newTaskText} onchange={handleTaskTextChange}></lightning-input>
+            <lightning-button label="Alterar Tarefa" onclick={handleUpdateTask}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

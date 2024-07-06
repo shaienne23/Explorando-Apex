@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empresa_contratante__c</fullName>
+    <description>Empresa contratante relacionada a proposta.</description>
+    <inlineHelpText>Informe empresa contratante relacionada a proposta.</inlineHelpText>
+    <label>Empresa contratante</label>
+    <referenceTo>Empresa_contratante__c</referenceTo>
+    <relationshipLabel>Propostas dos centros</relationshipLabel>
+    <relationshipName>Propostas_dos_centros</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
