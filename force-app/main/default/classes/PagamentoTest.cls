@@ -1,5 +1,5 @@
 @isTest
-public class PagamentoTest {
+public with sharing class PagamentoTest {
     
     @isTest static void pagamentoCartao(){
         PagamentoCartao pc = new PagamentoCartao();
