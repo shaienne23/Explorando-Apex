@@ -70,31 +70,31 @@ public with sharing class TiposDeDados {
         // a classes
         
         // Tipo enum, utilizado para escolher entre opções
-        enum Season { WINTER, SPRING, SUMMER, FALL }
-        Season mySeason = Season.WINTER;
-        System.debug(mySeason);
+        //enum Season { WINTER, SPRING, SUMMER, FALL }
+        //Season mySeason = Season.WINTER;
+        //System.debug(mySeason);
 
         // Para acessar o valor de cada enum
-        System.debug(Season.WINTER.name());
-        System.debug(Season.WINTER.ordinal());
+        //System.debug(Season.WINTER.name());
+        //System.debug(Season.WINTER.ordinal());
 
         // Ou realizar comparativos
-        System.debug(mySeason == Season.WINTER);
-        System.debug(mySeason != Season.WINTER);
+        //System.debug(mySeason == Season.WINTER);
+        //System.debug(mySeason != Season.WINTER);
 
         // Ou adicionar um for para percorrer a lista de enums
-        for (Season s : Season.values()) {
-            System.debug(s);
-        }
+        //for (Season s : Season.values()) {
+           // System.debug(s);
+        //}
 
-        System.debug(mySeason);
+        //System.debug(mySeason);
 
         // Tipo de dados ID, tenho quando faço uso de dados do salesforce.
         Account acc = new Account();
         acc.Name = 'teste';
         insert acc;
 
-        Id aId = a.Id;
+        Id aId = acc.Id;
         System.debug(aId);
 
     }
