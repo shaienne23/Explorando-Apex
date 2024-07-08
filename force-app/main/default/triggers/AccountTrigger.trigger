@@ -1,4 +1,4 @@
-trigger AccountTrigger on Account (before insert, before update){/*
+trigger AccountTrigger on Account (before insert, before update){
 	 // faça validação dos dados e se os dados estiverem ok realizar a inserção.
      if(Trigger.isBefore){
         for(Account account : trigger.new){
@@ -24,5 +24,5 @@ trigger AccountTrigger on Account (before insert, before update){/*
                 // Se a Receita Anual for menor que 0 durante a atualização, exiba um erro.
             }
             }
-    }   	*/		
+    }   			
 }
