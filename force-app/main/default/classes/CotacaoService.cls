@@ -9,7 +9,7 @@ public with sharing class CotacaoService {
         request.setEndpoint(endpoint);
         request.setMethod('GET');
         request.setTimeout(12000);
-        request.setHeader('Content-Type', 'applicativo/json');
+        request.setHeader('Content-Type', 'application/json');
 
         HttpResponse response = http.send(request);
 
