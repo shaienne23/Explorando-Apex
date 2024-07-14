@@ -7,7 +7,16 @@ global with sharing class EscolaREST {
 
     @httpPost
     global static Escola__c insertEscola(Escola__c escola){
+        //TODO: Aqui podemos adicionar outras  operações
         insert escola;
         return escola;
+    }
+
+    @httpPut
+    global static Escola__c upsertEscola(Escola__c escola){
+         //TODO: Aqui podemos adicionar outras  operações
+         upsert escola;
+         return escola;
+
     }
 }
