@@ -19,4 +19,25 @@ global with sharing class EscolaREST {
          return escola;
 
     }
+
+    @httpPatch
+    global static Escola__c updateEscola(Escola__c escola){
+        //TODO: Aqui podemos adicionar outras  operações
+        update escola;
+        return escola;
+    }
+    
+    @httpDelete
+    global static Boolean deleteEscola() {
+        try{
+            Id idEscola = (Id)RestContext.request.params.get('Id');
+            Escola__c escolaToDelete = new Escola__c(Id = idEscola);
+    
+            delete escolaToDelete;
+            return true;
+        }catch(Exception ex){
+            return false;
+        }
+      
+    }
 }
