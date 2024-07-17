@@ -1,11 +1,15 @@
 <apex:page id="AccountPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account">
-    
+
     <apex:form id="accountForm">
         <apex:pageBlock mode="edit">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}" />
+            </apex:pageBlockButtons>
+
             <apex:pageBlockSection title="Account Information" columns="2">
-                <apex:inputField value="{!Account.Name}"/>
-                <apex:inputField value="{!Account.Site}"/>
-                <apex:inputField value="{!Account.Phone}"/>
+                <apex:inputField value="{!Account.Name}" />
+                <apex:inputField value="{!Account.Site}" />
+                <apex:inputField value="{!Account.Phone}" />
             </apex:pageBlockSection>
         </apex:pageBlock>
 
