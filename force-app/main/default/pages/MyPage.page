@@ -1,6 +1,29 @@
-<apex:page>
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page id="MyFirstPage" docType="html-5.0" showHeader="true" sidebar="false">
+    <style>
+        /* estilo para o botão transition serve para animação de elementos para transição mais leve, tempo, tipo, como funciona, se começa rapido e termina devagar*/
+       .myButton{
+        background: white;
+        color: #1798C1;
+        border: 2px solid #1798C1;
+        transition: .2s linear;
+        padding: 10px;
+       } 
+/* hover serve para que ao passar mouse mude de cor ou faça alguma ação, neste caso ao passar o mouse mudará o backgroud*/
+       .myButton :hover{
+        background: #1798C1;
+        color: white;
+       }
+
+    </style>
+
+    <button onclick="handleClick()">
+        Click Me
+    </button>
+    <script>
+        function handleClick() {
+            const name = prompt('Diga seu Nome');
+            alert(`Bem Vindo ${name} !!`);
+        }
+    </script>
+
 </apex:page>
