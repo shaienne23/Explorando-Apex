@@ -1,6 +1,12 @@
 <apex:page id="AccountPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account" extensions="AcountControllerExtension">
 
     <apex:form id="accountForm">
+        <!-- Para que ele de um retorno imediato do contato adicionado sera necessario usar a variavel immediate-->
+        <apex:actionFunction name="addContact" action="{!addContact}" reRender="contactInformation" immediate="true"/>
+         <!-- Adicionando outra action function para deletar linhas da tabela contato-->
+        <apex:actionFunction name="deleteContact" action="{!deleteContact}" reRender="contactInformation" immediate="true">
+            <apex:param name="index" value=""/>
+        </apex:actionFunction>
         <apex:pageBlock mode="edit">
             <apex:pageBlockButtons location="top">
                 <apex:commandButton value="Save" action="{!save}" />
@@ -11,12 +17,26 @@
                 <apex:inputField value="{!Account.Site}" />
                 <apex:inputField value="{!Account.Phone}" />
             </apex:pageBlockSection>
-            <apex:pageBlockSection title="Contact Information" columns="1">
+            <apex:pageBlockSection title="Contact Information" columns="1" id="contactInformation">
                 <apex:pageBlockSectionItem>
-                    <apex:commandButton value="Add Contato" action="{!addContact}"/>
+
+                    <!--<apex:commandButton value="Add Contato" action="{!addContact}"/> este botao 
+                    salva todo o formulario de uma vez e queremos que ele salve apenas o contato por isso vamos implementar um botao mais simples-->
+                    <button type="button" onclick="addContact();">
+                        Add Contato
+                    </button>
                 </apex:pageBlockSectionItem>
+                <apex:variable var="index" value="{!0}"/>
                 <apex:pageBlockSectionItem>
                     <apex:pageBlockTable value="{!listContact}" var="contact">
+                        <apex:column>
+                            <apex:facet name="header">
+
+                            </apex:facet>
+                            <a href="_" onclick="deleteContact(); return false">Delete</a>
+                            <apex:variable var="index" value="{!index + 1}"/>
+                            <apex:inputField value="{!contact.FirstName}"/>
+                        </apex:column>
                         <apex:column>
                             <apex:facet name="header">
                                 Primeiro Nome
