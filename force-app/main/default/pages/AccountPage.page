@@ -1,6 +1,14 @@
-<apex:page>
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page id="AccountPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account">
+    
+    <apex:form id="accountForm">
+        <apex:pageBlock mode="edit">
+            <apex:pageBlockSection title="Account Information" columns="2">
+                <apex:inputField value="{!Account.Name}"/>
+                <apex:inputField value="{!Account.Site}"/>
+                <apex:inputField value="{!Account.Phone}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+    </apex:form>
+
 </apex:page>
