@@ -1,0 +1,19 @@
+<apex:page id="AccountListPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account" recordSetVar="Accounts">
+
+
+    <apex:form id="ListForm">
+        <apex:pageBlock title="Account List">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="New Account" action="{!URLFOR($Action.Account.New)}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!accounts}" var="account">
+                <apex:column>
+                    <apex:facet name="header">Name</apex:facet>
+                    <apex:outputLink value="/{!account.Id}">{!account.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!account.Phone}" />
+                <apex:column value="{!account.Website}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
