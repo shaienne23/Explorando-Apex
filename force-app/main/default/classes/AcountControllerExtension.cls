@@ -3,11 +3,16 @@ public List<Contact> listContact {get; set;}
 public Account account {get; set;}
 
     public AcountControllerExtension(ApexPages.StandardController standardController) {
+        //adicionar metodo para puxar Id para pagina de edição
         this.listContact = new List<Contact>();
-        this.account = new Account();
-    }
+        this.account = standardController.getRecord() == null ? New Account() : (Account)standardController.getRecord();
+        
+        if (this.account.Id != null) {
+            this.listContact = [SELECT Id, FirstName, LastName, Email from Contact WHERE AccountId = :this.account.Id];
+        }
+    }   
 
-    /* para redirecionamento para outras paginas, ou apenas atualizar a propria pagina se usa pageRerfer  */
+    /* para redirecionamento para outras paginas, ou apenas atualizar a propria pagina se usa pageRefer  */
     public Contact NewContact(){
         return new Contact();
     }
@@ -29,10 +34,10 @@ public Account account {get; set;}
         upsert Account;
 
         for (Contact contact : this.listContact) {
-            contact.Account = account.Id;
+            contact.AccountId = account.Id;
         }
 
-        insert listContact;
+        upsert listContact;
 
         ApexPages.StandardController controller = new ApexPages.StandardController(account);
 
