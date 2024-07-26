@@ -1,0 +1,54 @@
+<apex:page id="AccountPDF" renderAS="pdf" docType="html-5.0" showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false" controller="AccountPDFController">
+<!-- Para utilizar o HTML completo adicionamos applyBodyTag="false" applyHtmlTag="false" -->
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF</title>
+    <style>
+        ul{
+            list-style: none;
+         }
+    </style>
+</head>
+<body>
+    <section>
+        <h1> Account Information</h1>
+        <!-- qualquer metodo em apex que começa com get poide ser refenciado sem o get ao utilizar no html em visualforce-->
+        Name: {!currentAccount.Name}
+        Phone: {!currentAccount.Phone}
+        Website: {!currentAccount.Website}
+    </section>
+    <section>
+        <ul>
+            <h1>Contact Information</h1>
+            <apex:repeat value="{!contacts}" var="contact">
+                <li>
+                    Name: {!contact.FirstName} {!contact.LastName}
+                    Email: {!contact.Email}
+                </li>
+
+            </apex:repeat>
+        </ul>
+    </section>
+    <section>
+        <h1>Terms and Conditions</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet laoreet est, sed elementum ex auctor a. Aenean pulvinar porttitor dolor sed pellentesque. Ut felis purus, auctor vitae vestibulum id, maximus vitae turpis. Morbi semper semper odio quis lobortis. Etiam porta ac eros eget lacinia. Nullam turpis turpis, vehicula aliquam suscipit ornare, consectetur quis justo. Mauris vel consectetur orci. Suspendisse potenti. Integer elementum a mi nec molestie. Cras porttitor metus non diam pretium sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+            Aliquam erat volutpat. Nullam nec hendrerit libero. Cras in placerat ligula, vel pulvinar sem. Ut tincidunt consectetur lorem sodales ultrices. In ullamcorper nibh tellus, ut elementum lorem eleifend vel. Vestibulum placerat, lectus at elementum molestie, ligula neque rhoncus erat, accumsan euismod lorem elit vel ipsum. Praesent at massa vitae mi vehicula eleifend a vel augue. Morbi condimentum est et eros gravida, id eleifend ex porttitor. Curabitur rhoncus, nisi quis tristique ultrices, libero sem aliquet libero, nec convallis ex mi eu nulla. Quisque quis luctus sem, sed consectetur purus.
+
+            In aliquet nulla et convallis convallis. Curabitur finibus dui eu eros laoreet ultricies. Donec elementum tincidunt mi. Vestibulum lectus nibh, mollis sit amet scelerisque et, tincidunt at sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin sodales dui vitae leo convallis, a condimentum enim interdum. Curabitur elementum augue ac euismod maximus. Pellentesque urna massa, dictum eu posuere vitae, euismod a odio. Suspendisse id mauris neque. Sed quis lorem venenatis, ultrices augue a, ullamcorper nulla. Quisque eu nisi non lacus gravida accumsan at vitae felis. Curabitur dui tellus, dictum sed aliquet ac, semper quis lacus. Aliquam turpis massa, tincidunt ac mi vel, rhoncus blandit dolor. Etiam pretium porta finibus. Suspendisse eget nunc purus.
+
+            Morbi quis convallis ex, vitae varius ipsum. Cras et ex neque. Suspendisse potenti. Mauris leo lectus, blandit et sollicitudin et, bibendum et mi. Aliquam et sapien faucibus, ullamcorper nisl et, rutrum ligula. Maecenas a elementum sem. Morbi vitae laoreet est, vitae commodo ex. Nam egestas volutpat ligula, eu pulvinar sem vehicula egestas.
+
+            Maecenas vitae tortor eget ante facilisis dapibus venenatis vitae neque. Nunc congue lorem sed odio commodo mattis. Phasellus elementum dolor ut nisi vulputate, ut tristique ante vulputate. Etiam malesuada diam quis magna faucibus, vitae suscipit orci semper. Curabitur vitae diam lectus. Nullam molestie metus ut nunc scelerisque, quis pharetra elit iaculis. In felis eros, convallis vitae commodo at, faucibus ut nisl. Vestibulum volutpat tincidunt bibendum.
+        </p>
+    </section>
+</body>
+</html>
+
+<!-- End Default Content REMOVE THIS -->
+</apex:page>
+
