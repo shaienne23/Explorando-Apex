@@ -1,4 +1,4 @@
-<apex:page id="AccountListPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account" recordSetVar="Accounts">
+<apex:page id="AccountListPage" docType="html-5.0" showHeader="true" sidebar="false" standardController="Account" recordSetVar="accounts">
 
 
     <apex:form id="ListForm">
@@ -6,6 +6,10 @@
             <apex:pageBlockButtons location="top">
                 <apex:commandButton value="New Account" action="{!URLFOR($Action.Account.New)}" />
             </apex:pageBlockButtons>
+            <apex:selectList value="{!filterId}" size="1">
+                <apex:selectOptions value="{!listViewOptions}" />
+                <apex:actionSupport event="onchance" reRender="ListForm"/>
+            </apex:selectList>
             <apex:pageBlockTable value="{!accounts}" var="account">
                 <apex:column>
                     <apex:facet name="header">Name</apex:facet>
