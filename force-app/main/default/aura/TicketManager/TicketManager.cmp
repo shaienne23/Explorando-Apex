@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPagesTypes" acess="global">
+    <aura:iteration items="1,2,3" var="voo"
+    <c:cardTicket></c:cardTicket>
+</aura:component>	

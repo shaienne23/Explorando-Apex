@@ -25,28 +25,47 @@ public with sharing class TicketsController {
 }
 // metodo para pegar todos os voos, para serem consumidos pelo componente
     @AuraEnabled
-    public static String getVoos(String aeroportoOrigem, String aeroportoDestino, String dataPartida, String dataRetorno){
+    public static List<RetornoVooTo> getVoos(String aeroportoOrigem, String aeroportoDestino, String dataPartida, String dataRetorno){
         Date dtPartida = dateParse(dataPartida);
         Date dataRetorno = dateParse(dataRetorno);
 
-        List<Voo__c> voosOrigem = [SELECT Id, Name, Aeroporto_Chegada__r.Sigla__c, Aeroporto_Partida__r.Sigla__c, Valor__c
+        List<Voo__c> voosOrigem = [SELECT Id, Name, Aeroporto_Chegada__r.Sigla__c, Aeroporto_Partida__r.Sigla__c, Valor__c, Duracao__c,
+                                        Companhia__c, Hora_de_Partida__c, Hora_de_Chegada__c, Data_Partida__c, Data_Chegada__c
                                     FROM Voo__c
                                     WHERE Data_Partida__c = :dtPartida AND Aeroporto_Partida__c = :aeroportoOrigem AND Aeroporto_Chegada__c = :aeroportoDestino
                                     WITH SECURITY_ENFORCED];
 
-        List<Voo__c> voosOrigem = [SELECT Id, Name, Aeroporto_Chegada__r.Sigla__c, Aeroporto_Partida__r.Sigla__c, Valor__c
+        List<Voo__c> voosOrigem = [SELECT Id, Name, Aeroporto_Chegada__r.Sigla__c, Aeroporto_Partida__r.Sigla__c, Valor__c, Duracao__c,
+                                        Companhia__c, Hora_de_Partida__c, Hora_de_Chegada__c, Data_Partida__c, Data_Chegada__c
                                     FROM Voo__c
                                     WHERE Data_Partida__c = :dtRetorno AND Aeroporto_Partida__c = :aeroportoDestino AND Aeroporto_Chegada__c = :aeroportoOrigem
                                     WITH SECURITY_ENFORCED];    
                                     
-        //Mapa para cruzar possibilidade de voos de ida e de volta na busca de voos
-        Map<Voo__c, Voo__c> result = new Map<Voo__c, Voo__c>();
+        //Lista para cruzar possibilidade de voos de ida e de volta na busca de voos
+        List<RetornoVooTO> result = new List<RetornoVooTO>();
           for (Voo__c vooOrigem : voosOrigem) {
             for (Voo__c vooDestino : voosDestino) {
                 result.put(vooOrigem, vooDestino);
             }
           } 
-        return JSON.serialize(result);
+        return (result);
+    }
+
+    @AuraEnabled
+    public static Ticket__c createTicket(String accountId, String vooIdaId, String vooVoltaId){
+
+    }
+
+    public class RetornoVooTO {
+        @AuraEnabled
+        public Voo__c vooIda;
+        @AuraEnabled
+        public Voo__c vooVolta;
+       
+        public RetornoVooTO(Voo__c vooIda, Voo__c vooVolta){
+            this.vooIda = vooIda;
+            this.vooVolta = vooVolta;
+        }
     }
 
     //Metodo parta opção de ticket para a conta, retornar o ticket criado
@@ -70,7 +89,7 @@ public with sharing class TicketsController {
         
         return ticket;
      }else{
-        throw new AuraHandledException('Voce nao tem permissão para criar um ticket, contacte seu Administrador!');
+        throw new AuraHandledException('Voce nao tem permissão para criar um ticket, contate seu Administrador!');
      }
     
     }
