@@ -1,0 +1,21 @@
+<aura:component>
+<!-- Criando os atributos -->
+    <aura:attribute name="companhia" type="String" />
+
+    <aura:attribute name="horaSaidaOrigem" type="String" />
+    <aura:attribute name="siglaAeroportoOrigemVooIda" type="Boolean"  />
+
+    <aura:attribute name="horaChegaDestino" type="String" />
+    <aura:attribute name="vooOrigemChegaOutroDia" type="Boolean" />
+    <aura:attribute name="siglaAeroportoDestinoVooIda" type="Boolean" />
+
+    <aura:attribute name="horaSaidaDestino" type="String" />
+    <aura:attribute name="siglaAeroportoDestinoVooVolta" type="Boolean" />
+
+    <aura:attribute name="horaChegadaOrigem" type="String" />
+    <aura:attribute name="siglaAeroportoOrigemVooVolta" type="Boolean"  />
+    <aura:attribute name="vooDestinoChegaOutroDia" type="Boolean" />
+
+    <aura:attribute name="valor" type="Decimal" />
+
+</aura:component>	
