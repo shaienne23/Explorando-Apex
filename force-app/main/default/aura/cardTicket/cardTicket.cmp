@@ -1,21 +1,22 @@
 <aura:component>
 <!-- Criando os atributos -->
-    <aura:attribute name="companhia" type="String" />
+    <aura:attribute name="companhiaOrigem" type="String" default="GOL" />
+    <aura:attribute name="horaSaidaOrigem" type="String" default="07:00"/>
+    <aura:attribute name="siglaAeroportoOrigemVooIda" type="Boolean" default="CGH"  />
 
-    <aura:attribute name="horaSaidaOrigem" type="String" />
-    <aura:attribute name="siglaAeroportoOrigemVooIda" type="Boolean"  />
+    <aura:attribute name="horaChegaDestino" type="String" default="08:00"/>
+    <aura:attribute name="siglaAeroportoDestinoVooIda" type="Boolean" default="SDU" />
+    <aura:attribute name="vooOrigemChegaOutroDia" type="Boolean" default="True" />
+   
+    <aura:attribute name="companhiaDestino" type="String" default="LATAM" />
+    <aura:attribute name="horaSaidaDestino" type="String" default="10:00"/>
+    <aura:attribute name="siglaAeroportoDestinoVooVolta" type="String"  default="SDU"/>
 
-    <aura:attribute name="horaChegaDestino" type="String" />
-    <aura:attribute name="vooOrigemChegaOutroDia" type="Boolean" />
-    <aura:attribute name="siglaAeroportoDestinoVooIda" type="Boolean" />
+    <aura:attribute name="horaChegadaOrigem" type="String" default="11:00" />
+    <aura:attribute name="siglaAeroportoOrigemVooVolta" type="Boolean" default="CGH"  />
+    <aura:attribute name="vooDestinoChegaOutroDia" type="Boolean" default="False" />
 
-    <aura:attribute name="horaSaidaDestino" type="String" />
-    <aura:attribute name="siglaAeroportoDestinoVooVolta" type="Boolean" />
-
-    <aura:attribute name="horaChegadaOrigem" type="String" />
-    <aura:attribute name="siglaAeroportoOrigemVooVolta" type="Boolean"  />
-    <aura:attribute name="vooDestinoChegaOutroDia" type="Boolean" />
-
-    <aura:attribute name="valor" type="Decimal" />
+    <aura:attribute name="valor" type="Decimal" default="200"/>
+    <aura:attribute name="moeda" type="Decimal" default="USD"/>
 
 </aura:component>	
