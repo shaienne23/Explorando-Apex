@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="flexipage:availableForAllPagesTypes" acess="global">
 <!-- Criando os atributos -->
     <aura:attribute name="companhiaOrigem" type="String" default="GOL" />
     <aura:attribute name="horaSaidaOrigem" type="String" default="07:00"/>
@@ -19,4 +19,42 @@
     <aura:attribute name="valor" type="Decimal" default="200"/>
     <aura:attribute name="moeda" type="Decimal" default="USD"/>
 
+    <!-- Utilizando card para dar fundo -->
+    <lightning:card>
+        <!-- Utilizando modelo de grid para separar em tres colunas -->
+        <div class="slds-grid slds-grid_align-space">
+            <div class="slds-col">
+                <p>{!v.companhiaOrigem}</p>
+                <p>{!v.companhiaDestino}</p>
+            </div>
+            <div class="slds-col">
+                <!-- Segundo modelo de grid Voo Origem -->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                    <span>1</span>
+                    </div>
+                    <div class="slds-col">
+                    <span>2</span>
+                    </div>
+                    <div class="slds-col">
+                    <span>3</span>
+                    </div>
+                    </div>
+            </div>
+            <div class="slds-col">
+                 <!-- Segundo modelo de grid Voo Destino -->
+                 <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                    <span>1</span>
+                    </div>
+                    <div class="slds-col">
+                    <span>2</span>
+                    </div>
+                    <div class="slds-col">
+                    <span>3</span>
+                    </div>
+                    </div>
+            </div>
+            </div>
+    </lightning:card>
 </aura:component>	
