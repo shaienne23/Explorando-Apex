@@ -49,7 +49,7 @@
                     <div class="slds-col">
                         <p><strong>{!v.horaSaidaDestino}</strong></p>
                         <p>{!v.siglaAeroportoDestinoVooVolta}</p>
-                    </div>
+                    </div>@
                     <div class="slds-col">
                         <div class="seta"></div>
                     </div>
