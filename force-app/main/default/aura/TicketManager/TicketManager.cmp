@@ -2,10 +2,12 @@
     <aura:attribute name="voos" type="Object" default="[]"/>
     <!-- Fazer o listener do evento quando for disparado-->
      <aura:handler name="init" value="this" action="{!c.init}"/>
+     <aura:attribute name="moeda" type="String" default="BRL"/>
 
     <aura:iteration items="{!v.voos}" var="voo">
-        <c:cardTicket companhiaOrigem="{!vooIda.Companhia__c}"
-                      companhiaDestino="{!vooVolta.Companhia__c}"
+        <c:cardTicket vooIda="{!voo.vooIda}"
+                      vooVolta="{!voo.vooVolta}"
+                      moeda ="!v.moeda}"
         ></c:cardTicket>
     </aura:iteration>
 </aura:component>	
