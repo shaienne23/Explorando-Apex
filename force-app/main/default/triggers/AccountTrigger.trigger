@@ -1,4 +1,20 @@
-trigger AccountTrigger on Account (before insert, before update){
+trigger AccountTrigger on Account (before insert, after insert) {
+
+    if(Trigger.operationType == System.TriggerOperation.BEFORE_INSERT){
+        
+        AccountTriggerHandler.onBeforeInsert(Trigger.new,Trigger.newMap);
+    }
+    if(Trigger.operationType == System.TriggerOperation.AFTER_INSERT){
+        
+        AccountTriggerHandler.onAfterInsert(Trigger.new,Trigger.newMap);
+    }
+
+}
+
+
+
+
+/*trigger AccountTrigger on Account (before insert, before update){
 	 // faça validação dos dados e se os dados estiverem ok realizar a inserção.
      if(Trigger.isBefore){
         for(Account account : trigger.new){
@@ -25,4 +41,4 @@ trigger AccountTrigger on Account (before insert, before update){
             }
             }
     }   			
-}
+}*/
