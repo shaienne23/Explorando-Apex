@@ -1,4 +1,4 @@
-<apex:page id="MyFirstPage" docType="html-5.0" showHeader="true" sidebar="false">
+<apex:page controller="AccountController" id="MyFirstPage" docType="html-5.0" showHeader="true" sidebar="false">
     <style>
         /* estilo para o botão transition serve para animação de elementos para transição mais leve, tempo, tipo, como funciona, se começa rapido e termina devagar*/
        .myButton{
@@ -15,6 +15,19 @@
        }
 
     </style>
+     <apex:form>
+        <apex:pageBlock title="Selecionar Rating da Conta">
+            <apex:pageBlockSection>
+                <apex:outputLabel for="rating" value="Selecione o Rating" />
+                <apex:selectList value="{!selectedRating}" size="1" id="rating">
+                    <apex:selectOptions value="{!ratingOptions}" />
+                </apex:selectList>
+                <apex:commandButton value="Enviar Avaliação" action="{!submitRating}" styleClass="myButton" />
+            </apex:pageBlockSection>
+            <apex:pageMessages />
+        </apex:pageBlock>
+    </apex:form>
+
 
     <button onclick="handleClick()">
         Click Me
